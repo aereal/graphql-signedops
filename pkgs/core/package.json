@@ -1,0 +1,48 @@
+{
+  "name": "graphql-signed-query",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./document-signer": {
+      "source": "./src/document-signer.ts",
+      "types": "./dist/document-signer.d.ts",
+      "default": "./dist/document-signer.js"
+    },
+    "./payload": {
+      "source": "./src/payload.ts",
+      "types": "./dist/payload.d.ts",
+      "default": "./dist/payload.js"
+    },
+    "./signature": {
+      "source": "./src/signature.ts",
+      "types": "./dist/signature.d.ts",
+      "default": "./dist/signature.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": {
+    "name": "aereal"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": "24.18.0"
+  },
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b",
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "test-utils": "workspace:*",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "dependencies": {
+    "graphql": "catalog:",
+    "jose": "catalog:"
+  }
+}
