@@ -1,6 +1,7 @@
 packages:
   - 'pkgs/*'
 catalog:
+  '@graphql-codegen/plugin-helpers': 7.0.1
   '@types/node': 26.0.1
   graphql: 16.14.2
   jose: 6.2.3

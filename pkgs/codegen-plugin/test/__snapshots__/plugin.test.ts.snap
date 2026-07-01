@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`plugin > main > no document files > emits empty object 1`] = `
+"{}
+"
+`;
+
+exports[`plugin > main > some document files > emits a signature 1`] = `
+"{"25354f38bfc2053a6b1b52f7d76d359012b4b2ad434da53e2417bcc6eed2c856":"25354f38bfc2053a6b1b52f7d76d359012b4b2ad434da53e2417bcc6eed2c856"}
+"
+`;
