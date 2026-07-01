@@ -19,6 +19,7 @@
     "format:ci": "oxfmt --check '**/*.ts'"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "4.1.9",
     "oxfmt": "0.56.0",
     "oxlint": "1.71.0",
     "oxlint-tsgolint": "0.23.0",
