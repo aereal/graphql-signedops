@@ -2,6 +2,13 @@
 name: CI
 on:
   pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  push:
+    branches:
+      - main
 jobs:
   ok:
     runs-on: ubuntu-slim
@@ -16,6 +23,7 @@ jobs:
     permissions:
       code-quality: write
       contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
@@ -32,8 +40,13 @@ jobs:
           - run: pnpm test --coverage
           - run: pnpm lint
           - run: 'pnpm format:ci'
-      - uses: actions/upload-code-coverage@abb5995db9e0199b0e2bb9dbd136fce4cb1ec4d3 # v1.3.0
-        with:
-          file: coverage/cobertura-coverage.xml
-          language: TypeScript
-          label: coverage/app
+      - parallel:
+        - uses: actions/upload-code-coverage@abb5995db9e0199b0e2bb9dbd136fce4cb1ec4d3 # v1.3.0
+          with:
+            file: coverage/cobertura-coverage.xml
+            language: TypeScript
+            label: coverage/app
+            fail-on-error: false
+        - uses: k1LoW/octocov-action@b3b6ee60482a667950f87553abf1df63217235d9 # v1.5.1
+          with:
+            version: 'v0.75.8'
