@@ -24,9 +24,11 @@
     "@types/node": "catalog:",
     "graphql": "catalog:",
     "typescript": "catalog:",
-    "vitest": "catalog:"
+    "vitest": "catalog:",
+    "wonka": "6.3.6"
   },
   "dependencies": {
+    "@urql/core": "catalog:",
     "graphql-signedops": "workspace:*"
   }
 }
