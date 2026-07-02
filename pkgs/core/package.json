@@ -1,5 +1,5 @@
 {
-  "name": "graphql-signed-query",
+  "name": "graphql-signedops",
   "type": "module",
   "version": "1.0.0",
   "exports": {

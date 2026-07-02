@@ -53,7 +53,7 @@ importers:
       '@graphql-codegen/plugin-helpers':
         specifier: 'catalog:'
         version: 7.0.1(graphql@16.14.2)
-      graphql-signed-query:
+      graphql-signedops:
         specifier: workspace:*
         version: link:../core
     devDependencies:

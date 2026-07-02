@@ -3,8 +3,8 @@ import {
   type PluginFunction,
   type PluginValidateFn,
 } from "@graphql-codegen/plugin-helpers";
-import { type DocumentSigner } from "graphql-signed-query/document-signer";
-import { createOperationSignatures } from "graphql-signed-query/signature";
+import { type DocumentSigner } from "graphql-signedops/document-signer";
+import { createOperationSignatures } from "graphql-signedops/signature";
 
 export class MissingSignerError extends Error {
   constructor() {

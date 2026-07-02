@@ -1,5 +1,5 @@
 {
-  "name": "graphql-codegen-signed-query-query",
+  "name": "graphql-codegen-signedops",
   "type": "module",
   "version": "1.0.0",
   "exports": {
@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@graphql-codegen/plugin-helpers": "catalog:",
-    "graphql-signed-query": "workspace:*"
+    "graphql-signedops": "workspace:*"
   }
 }

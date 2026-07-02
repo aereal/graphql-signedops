@@ -1,5 +1,5 @@
 import { buildSchema, type DocumentNode, parse, print } from "graphql";
-import { type DocumentSigner } from "graphql-signed-query";
+import { type DocumentSigner } from "graphql-signedops";
 import { calculateHash } from "test-utils";
 import { describe, expect, it } from "vitest";
 import { codegenPlugin } from "../src/plugin";
