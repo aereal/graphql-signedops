@@ -16,7 +16,8 @@
     "test": "vitest",
     "lint": "oxlint",
     "format": "oxfmt '**/*.ts'",
-    "format:ci": "oxfmt --check '**/*.ts'"
+    "format:ci": "oxfmt --check '**/*.ts'",
+    "docs:gen": "typedoc"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "4.1.9",
