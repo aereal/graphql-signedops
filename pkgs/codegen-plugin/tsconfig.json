@@ -1,0 +1,17 @@
+{
+  "include": [
+    "./src/**/*",
+  ],
+  "extends": [
+    "../../tsconfig.common.json",
+  ],
+  "references": [
+    {"path": "../core"},
+    {"path": "../test-utils"},
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "types": ["node"],
+  }
+}

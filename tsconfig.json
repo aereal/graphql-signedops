@@ -1,0 +1,8 @@
+{
+  "include": [],
+  "references": [
+    {"path": "./pkgs/codegen-plugin"},
+    {"path": "./pkgs/core"},
+    {"path": "./pkgs/test-utils"},
+  ]
+}
