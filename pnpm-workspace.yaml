@@ -3,6 +3,7 @@ packages:
 catalog:
   '@graphql-codegen/plugin-helpers': 7.0.1
   '@types/node': 26.0.1
+  '@urql/core': 6.0.3
   graphql: 16.14.2
   jose: 6.2.3
   typescript: 6.0.3
