@@ -30,7 +30,7 @@
   "author": {
     "name": "aereal"
   },
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": "24.18.0"
   },
