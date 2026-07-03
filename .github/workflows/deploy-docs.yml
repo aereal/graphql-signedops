@@ -13,6 +13,7 @@ jobs:
   deploy-pages:
     runs-on: ubuntu-24.04
     permissions:
+      actions: read
       contents: read
       id-token: write
       pages: write
@@ -30,8 +31,24 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm ci
+      - id: get_job_html_url
+        background: true
+        run: |
+          gh api "repos/${repo}/actions/runs/${run_id}/attempts/${run_attempt}/jobs" > jobs.json
+          cat jobs.json | jq --exit-status -r --arg job_name "$job_name" '.jobs[] | select(.name == $job_name) | .html_url' > job_html_url
+          echo "job_html_url=$(cat ./job_html_url)" >> "$GITHUB_OUTPUT"
+        env:
+          repo: ${{ github.repository }}
+          run_id: ${{ github.run_id }}
+          run_attempt: ${{ github.run_attempt }}
+          job_name: ${{ github.job }}
+          GH_TOKEN: ${{ github.token }}
       - run: pnpm build
+        background: true
+      - wait-all:
       - run: pnpm docs:gen
+        env:
+          job_html_url: ${{ steps.get_job_html_url.outputs.job_html_url }}
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: docs/
