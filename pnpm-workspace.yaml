@@ -7,4 +7,4 @@ catalog:
   graphql: 16.14.2
   jose: 6.2.3
   typescript: 6.0.3
-  vitest: 4.1.9
+  vitest: 4.1.10
