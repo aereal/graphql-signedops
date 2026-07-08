@@ -6,6 +6,9 @@ import {
 import { type DocumentSigner } from "graphql-signedops/document-signer";
 import { createOperationSignatures } from "graphql-signedops/signature";
 
+/**
+ * An error indicates no {@link DocumentSigner} passed.
+ */
 export class MissingSignerError extends Error {
   constructor() {
     super("signer is required");
@@ -13,6 +16,9 @@ export class MissingSignerError extends Error {
 }
 
 export interface Config {
+  /**
+   * A {@link DocumentSigner|signer} to sign found documents.
+   */
   signer: DocumentSigner;
 }
 

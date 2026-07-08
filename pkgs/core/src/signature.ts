@@ -1,6 +1,11 @@
 import { print, type DocumentNode } from "graphql";
 import { type DocumentSigner } from "./document-signer";
 
+/**
+ * A mapping of operation and its signature.
+ *
+ * A key is SHA256 hash of the operation, and corresponding value is a signature.
+ */
 export type OperationSignatures = Record<string, string>;
 
 export const createOperationSignatures = async (
