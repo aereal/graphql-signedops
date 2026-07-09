@@ -16,8 +16,8 @@ catalogs:
       specifier: 6.0.3
       version: 6.0.3
     graphql:
-      specifier: 16.14.2
-      version: 16.14.2
+      specifier: 17.0.2
+      version: 17.0.2
     jose:
       specifier: 6.2.3
       version: 6.2.3
@@ -58,7 +58,7 @@ importers:
     dependencies:
       '@graphql-codegen/plugin-helpers':
         specifier: 'catalog:'
-        version: 7.0.1(graphql@16.14.2)
+        version: 7.0.1(graphql@17.0.2)
       graphql-signedops:
         specifier: workspace:*
         version: link:../core
@@ -68,7 +68,7 @@ importers:
         version: 26.0.1
       graphql:
         specifier: 'catalog:'
-        version: 16.14.2
+        version: 17.0.2
       test-utils:
         specifier: workspace:*
         version: link:../test-utils
@@ -83,7 +83,7 @@ importers:
     dependencies:
       graphql:
         specifier: 'catalog:'
-        version: 16.14.2
+        version: 17.0.2
       jose:
         specifier: 'catalog:'
         version: 6.2.3
@@ -114,7 +114,7 @@ importers:
     dependencies:
       '@urql/core':
         specifier: 'catalog:'
-        version: 6.0.3(graphql@16.14.2)
+        version: 6.0.3(graphql@17.0.2)
       graphql-signedops:
         specifier: workspace:*
         version: link:../core
@@ -124,7 +124,7 @@ importers:
         version: 26.0.1
       graphql:
         specifier: 'catalog:'
-        version: 16.14.2
+        version: 17.0.2
       typescript:
         specifier: 'catalog:'
         version: 6.0.3
@@ -741,9 +741,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  graphql@16.14.2:
-    resolution: {integrity: sha512-Chq1s4CY7jmh8gO2qvLIJyfCDIN+EHLFW/9iShnp1z8FjBQMoodWP1kDC36VAMXXIvAjj4ARa7ntfAV2BrjsbA==}
-    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
+  graphql@17.0.2:
+    resolution: {integrity: sha512-FRWbddMxfkjiB7z+aQDWIR+E34xo9I8c9mtK2RPv8PmMzKRvrdsreHL/Ui/TmwHJfhHChEtsFPyMHKI+xuarQQ==}
+    engines: {node: ^22.0.0 || ^24.0.0 || ^25.0.0 || >=26.0.0}
 
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
@@ -1107,9 +1107,9 @@ packages:
 
 snapshots:
 
-  '@0no-co/graphql.web@1.3.2(graphql@16.14.2)':
+  '@0no-co/graphql.web@1.3.2(graphql@17.0.2)':
     optionalDependencies:
-      graphql: 16.14.2
+      graphql: 17.0.2
 
   '@babel/helper-string-parser@7.29.7': {}
 
@@ -1150,26 +1150,26 @@ snapshots:
       '@shikijs/types': 3.23.0
       '@shikijs/vscode-textmate': 10.0.2
 
-  '@graphql-codegen/plugin-helpers@7.0.1(graphql@16.14.2)':
+  '@graphql-codegen/plugin-helpers@7.0.1(graphql@17.0.2)':
     dependencies:
-      '@graphql-tools/utils': 11.1.1(graphql@16.14.2)
+      '@graphql-tools/utils': 11.1.1(graphql@17.0.2)
       change-case-all: 2.1.0
       common-tags: 1.8.2
-      graphql: 16.14.2
+      graphql: 17.0.2
       import-from: 4.0.0
       tslib: 2.8.1
 
-  '@graphql-tools/utils@11.1.1(graphql@16.14.2)':
+  '@graphql-tools/utils@11.1.1(graphql@17.0.2)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@17.0.2)
       '@whatwg-node/promise-helpers': 1.3.2
       cross-inspect: 1.0.1
-      graphql: 16.14.2
+      graphql: 17.0.2
       tslib: 2.8.1
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.14.2)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@17.0.2)':
     dependencies:
-      graphql: 16.14.2
+      graphql: 17.0.2
 
   '@jridgewell/resolve-uri@3.1.2': {}
 
@@ -1418,9 +1418,9 @@ snapshots:
 
   '@types/unist@3.0.3': {}
 
-  '@urql/core@6.0.3(graphql@16.14.2)':
+  '@urql/core@6.0.3(graphql@17.0.2)':
     dependencies:
-      '@0no-co/graphql.web': 1.3.2(graphql@16.14.2)
+      '@0no-co/graphql.web': 1.3.2(graphql@17.0.2)
       wonka: 6.3.6
     transitivePeerDependencies:
       - graphql
@@ -1538,7 +1538,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  graphql@16.14.2: {}
+  graphql@17.0.2: {}
 
   has-flag@4.0.0: {}
 
