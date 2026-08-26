@@ -19,8 +19,8 @@ catalogs:
       specifier: 16.14.2
       version: 16.14.2
     jose:
-      specifier: 6.2.3
-      version: 6.2.3
+      specifier: 6.2.10
+      version: 6.2.10
     typescript:
       specifier: 6.0.3
       version: 6.0.3
@@ -86,7 +86,7 @@ importers:
         version: 16.14.2
       jose:
         specifier: 'catalog:'
-        version: 6.2.3
+        version: 6.2.10
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
@@ -768,8 +768,8 @@ packages:
     resolution: {integrity: sha512-HGYWWS/ehqTV3xN10i23tkPkpH46MLCIMFNCaaKNavAXTF1RkqxawEPtnjnGZ6XKSInBKkiOA5BKS+aZiY3AvA==}
     engines: {node: '>=8'}
 
-  jose@6.2.3:
-    resolution: {integrity: sha512-YYVDInQKFJfR/xa3ojUTl8c2KoTwiL1R5Wg9YCydwH0x0B9grbzlg5HC7mMjCtUJjbQ/YnGEZIhI5tCgfTb4Hw==}
+  jose@6.2.10:
+    resolution: {integrity: sha512-iiW7J9qRFlGxvCOIBDBDxFePQSn7ZMAnrYGhrrOo6siO/MIqwfyilLR27pkfDgUk+raLuzADS8A3S/KLBisc0g==}
 
   js-tokens@10.0.0:
     resolution: {integrity: sha512-lM/UBzQmfJRo9ABXbPWemivdCW8V2G8FHaHdypQaIy523snUjog0W71ayWXTjiR+ixeMyVHN2XcpnTd/liPg/Q==}
@@ -1559,7 +1559,7 @@ snapshots:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.1
 
-  jose@6.2.3: {}
+  jose@6.2.10: {}
 
   js-tokens@10.0.0: {}
 
